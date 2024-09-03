@@ -1,3 +1,4 @@
+# created by Shiladitya©
 from leetcoder.crew import LeetcoderCrew
 from leetcoder.retrieve import Retrieve
 
@@ -19,20 +20,3 @@ class Run:
             ans.append(leet.logs[_][0])
         self.prm = 0
         return ans
-
-
-testing = False
-
-if testing:
-    try:
-        inp = int(input('Enter the problem number: '))
-    except ValueError:
-        print('Enter an integer!')
-
-    if inp:
-        llm_result = Run.run(inp)
-
-    for i in llm_result:
-        print(i)
-
-
