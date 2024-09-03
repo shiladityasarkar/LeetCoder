@@ -1,6 +1,19 @@
-# Leetcoder Crew
+![Screenshot (325)](https://github.com/user-attachments/assets/243bd73a-b668-47c0-8470-c117cedce0a7)
 
-Welcome to the Leetcoder Crew project, powered by [crewAI](https://crewai.com). This template is designed to help you set up a multi-agent AI system with ease, leveraging the powerful and flexible framework provided by crewAI. Our goal is to enable your agents to collaborate effectively on complex tasks, maximizing their collective intelligence and capabilities.
+# LeetCODER by Shiladitya 🐺
+
+Welcome to the Leetcoder Crew project, powered by [crewAI](https://crewai.com).
+
+Given just the problem number from [LeetCode problems](https://leetcode.com/problemset/) I give you the complete code and step-by-step explanation.
+
+This involves -
+- Extracting the **correct** problem statement and **just** the problem statement 🙃
+- Making sure that it is not under premium category that you do not have access to.
+- Employing an agent (with custom tool for running python in a sandbox environment to check for errors) to write the code.
+- Employing another agent to explain the code (sequential process).
+  
+### ```This is my latest project to test my new feature - see PR``` [here](https://github.com/crewAIInc/crewAI/pull/1283).
+
 
 ## Installation
 
@@ -21,12 +34,12 @@ poetry lock
 ```bash
 poetry install
 ```
-### Customizing
+### Why copy? Customize...
 
-**Add your `OPENAI_API_KEY` into the `.env` file**
+**Add your `OPENAI_API_KEY` into the `.env` file** (if using OPENAI models)
 
-- Modify `src/leetcoder/config/agents.yaml` to define your agents
-- Modify `src/leetcoder/config/tasks.yaml` to define your tasks
+- Modify `src/leetcoder/config/agents.yaml` to alter definition of your agents
+- Modify `src/leetcoder/config/tasks.yaml` to alter definition of your tasks
 - Modify `src/leetcoder/crew.py` to add your own logic, tools and specific args
 - Modify `src/leetcoder/main.py` to add custom inputs for your agents and tasks
 
@@ -44,18 +57,6 @@ poetry run leetcoder
 
 This command initializes the leetcoder Crew, assembling the agents and assigning them tasks as defined in your configuration.
 
-This example, unmodified, will run the create a `report.md` file with the output of a research on LLMs in the root folder.
+## Queries | Feedback 🤗
 
-## Understanding Your Crew
-
-The leetcoder Crew is composed of multiple AI agents, each with unique roles, goals, and tools. These agents collaborate on a series of tasks, defined in `config/tasks.yaml`, leveraging their collective skills to achieve complex objectives. The `config/agents.yaml` file outlines the capabilities and configurations of each agent in your crew.
-
-## Support
-
-For support, questions, or feedback regarding the Leetcoder Crew or crewAI.
-- Visit our [documentation](https://docs.crewai.com)
-- Reach out to us through our [GitHub repository](https://github.com/joaomdmoura/crewai)
-- [Join our Discord](https://discord.com/invite/X4JWnZnxPb)
-- [Chat with our docs](https://chatg.pt/DWjSBZn)
-
-Let's create wonders together with the power and simplicity of crewAI.
+For any queries or feedback, please feel free to writetoshiladitya@gmail.com
