@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "leetcoder"
+version = "0.1.0"
+description = "Leetcoder using crewAI"
+authors = ["Shiladitya Sarkar <writetoshiladitya@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = ">=3.10,<=3.13"
+crewai = { extras = ["tools"], version = "^0.51.0" }
+
+[tool.poetry.scripts]
+leetcoder = "leetcoder.main:run"
+run_crew = "leetcoder.main:run"
+train = "leetcoder.main:train"
+replay = "leetcoder.main:replay"
+test = "leetcoder.main:test"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

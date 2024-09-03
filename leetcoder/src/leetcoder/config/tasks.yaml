@@ -1,0 +1,20 @@
+coding_task:
+  description: >
+    This is the problem statement -\n
+    {problem_statement}.\n
+    Write a synctactically correct python code that solves the given problem.
+    If the tool says that the code is correct, then immediately give your final best answer.
+  expected_output: >
+    A correct python code that solves the given problem.
+  agent: coding_expert
+
+teaching_task:
+  description: >
+    A solution is given to the following problem:\n
+    {problem_statement}.\n
+    Your job is to explain the code line by line.
+  expected_output: >
+    A correct and complete explanation of the Python code.
+  agent: teaching_expert
+  context:
+    - coding_task
